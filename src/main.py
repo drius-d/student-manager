@@ -78,19 +78,52 @@ def view_students(students):
     return pd.DataFrame(current_students).T 
 
 
-    # current_students = {"Alice": {'maths': 82}, 'physics': 52}, ...}
+    # current_students = {"Alice": {'maths': 82, 'physics': 52}, ...}
 
 
 def find_highest_performing_student(students):
+    if not students:
+        return None
+
+
     highest = 0 
     for name in students:
         average = students[name].calculate_average()
 
         if average > highest:
+            highest = average
             highest_student = name
 
     return highest_student
 
+def find_highest_subject(students):
+    if not students:
+        return None
+
+    current_students = {name: student.grades for name, student in students.items()}
+
+    subject_grades = {}
+
+    for name, student in current_students.items():
+        for subject, grade in student.items():
+            if subject not in subject_grades:
+                subject_grades[subject] = []
+
+            subject_grades[subject].append(grade)
+
+    subject_averages = {}
+
+    for subject, grades in subject_grades.items():
+        subject_averages[subject] = sum(grades) / len(grades)
+
+    highest = 0
+    for subject, average in subject_averages.items():
+        if average > highest:
+            highest = average
+            highest_subject = subject
+
+    return highest_subject
+        
 
 if __name__ == "__main__":
     main()
