@@ -1,0 +1,61 @@
+[{
+    "Alice": {
+        "maths": 82,
+        "physics": 91,
+        "chemistry": 76
+    },
+    "Bob": {
+        "maths": 74,
+        "physics": 68,
+        "chemistry": 81
+    },
+    "Charlie": {
+        "maths": 95,
+        "physics": 89,
+        "chemistry": 93
+    },
+    "Diana": {
+        "maths": 67,
+        "physics": 73,
+        "chemistry": 70
+    },
+    "Ethan": {
+        "maths": 88,
+        "physics": 84,
+        "chemistry": 79
+    },
+    "Fiona": {
+        "maths": 91,
+        "physics": 96,
+        "chemistry": 88
+    },
+    "George": {
+        "maths": 59,
+        "physics": 65,
+        "chemistry": 72
+    },
+    "Hannah": {
+        "maths": 78,
+        "physics": 82,
+        "chemistry": 85
+    },
+    "Isaac": {
+        "maths": 86,
+        "physics": 77,
+        "chemistry": 91
+    },
+    "Julia": {
+        "maths": 72,
+        "physics": 69,
+        "chemistry": 75
+    },
+    "Kevin": {
+        "maths": 93,
+        "physics": 87,
+        "chemistry": 90
+    },
+    "Laura": {
+        "maths": 81,
+        "physics": 79,
+        "chemistry": 84
+    }]
