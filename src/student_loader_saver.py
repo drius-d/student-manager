@@ -1,5 +1,5 @@
 import json
-from student import Student
+from student_pipeline import Student
 
 # Defining function to load
 def load_students(filename):
