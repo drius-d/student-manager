@@ -12,5 +12,5 @@ A CLI Python application for managing student grades
 - Change a grade
 - Calculate a student's average
 - Find the highest-performing student 
-- Find the highest grade in a subject
+- Find the highest average grade subject
 - Save and exit
